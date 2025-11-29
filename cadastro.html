@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | read.me</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="preload">
+
+    <script>
+        (function() {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'light-mode') document.body.classList.add('light-mode');
+        })();
+    </script>
+
+   <nav>
+        <a href="index.html" class="logo-link">
+            <img src="assets/img/logo.png.png" alt="Read.me Logo" class="logo-img">
+        </a>
+        
+        <a href="cadastro.html" class="btn-pill-gradient mobile-only-btn">Assine</a>
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html">Read&lt;me&gt;</a>
+                <a href="cadastro.html">Insights</a>
+                <a href="interacao.html">Hub</a>
+            </div>
+
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox-theme">
+                    <input type="checkbox" id="checkbox-theme" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+
+            <a href="cadastro.html" class="btn-pill-gradient desktop-only-btn">Assine</a>
+        </div>
+    </nav>
+    <section class="insights-container">
+        <h1 class="page-title">Insights</h1>
+        <h2 class="page-subtitle">Não seja um sistema legado.<br><span class="text-pink">Atualize-se rápido.</span></h2>
+
+        <div class="neon-card-wrapper">
+            <div class="neon-card-content">
+                <div id="form-messages" class="form-messages"></div>
+                <form class="insights-form" novalidate>
+                    <input type="text" id="nome" placeholder="Nome Completo" class="form-input" required>
+                    <input type="email" id="email-input" placeholder="Insira seu email" class="form-input" required>
+                    <input type="password" id="senha" placeholder="Crie uma senha (mín. 6 chars)" class="form-input" required>
+                    <div class="custom-select-wrapper">
+                        <select id="genero" class="form-input" required>
+                            <option value="" disabled selected>Gênero...</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        <span class="select-arrow">v</span>
+                    </div>
+                    <textarea id="bio" placeholder="Conte um pouco sobre você" class="form-input bio-textarea"></textarea>
+                    <p style="color: #a1a1a1; margin-top: 10px; font-size: 0.9rem;">Seus Interesses:</p>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-container"><input type="checkbox" name="interesse" value="IA"><span class="checkmark"></span> IA</label>
+                        <label class="checkbox-container"><input type="checkbox" name="interesse" value="Dados"><span class="checkmark"></span> Dados</label>
+                        <label class="checkbox-container"><input type="checkbox" name="interesse" value="Seguranca"><span class="checkmark"></span> Security</label>
+                        <label class="checkbox-container"><input type="checkbox" name="interesse" value="Todos"><span class="checkmark"></span> Todos</label>
+                    </div>
+                    <button type="submit" class="btn-large-gradient">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo" style="margin-bottom: 20px;">read.<span style="color: #bd00ff;">&lt;me&gt;</span></div>
+        <p>&copy; 2025 the lima co. Políticas de Privacidade e Termos de Uso.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

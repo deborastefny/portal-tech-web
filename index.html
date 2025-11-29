@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>read.me | Cheat Sheet Tech</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="preload">
+
+    <script>
+        (function() {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'light-mode') {
+                document.body.classList.add('light-mode');
+            }
+        })();
+    </script>
+
+  <nav>
+        <a href="index.html" class="logo-link">
+            <img src="assets/img/logo.png.png" alt="Read.me Logo" class="logo-img">
+        </a>
+        
+        <a href="cadastro.html" class="btn-pill-gradient mobile-only-btn">Assine</a>
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html">Read&lt;me&gt;</a>
+                <a href="cadastro.html">Insights</a>
+                <a href="interacao.html">Hub</a>
+            </div>
+
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox-theme">
+                    <input type="checkbox" id="checkbox-theme" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+
+            <a href="cadastro.html" class="btn-pill-gradient desktop-only-btn">Assine</a>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-typewriter-container">
+            <h1 class="hero-title type-line-1">
+                O <span class="text-purple">cheat sheet</span> diário
+            </h1>
+            <h1 class="hero-title type-line-2">
+                do <span class="text-green">universo tech.</span>
+            </h1>
+        </div>
+        
+        <p class="hero-slogan animate-text delay-2">Porque ninguém tem tempo de ler textão.</p>
+
+        <form class="newsletter-form animate-text delay-2" action="cadastro.html" method="GET">
+            <input type="email" name="email" placeholder="Insira seu email" required>
+            <button type="submit" class="btn-purple">Quero ler</button>
+        </form>
+    </header>
+
+    <section class="news-section">
+        <div class="section-title">
+             <div class="typewriter-center">
+                <h2 class="type-news">
+                    compile o mundo tech em <span style="color: #bd00ff;">5 minutos</span>
+                </h2>
+             </div>
+        </div>
+
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <div class="news-card"><img src="assets/img/noticia1.png" alt="Noticia 1"><div class="card-content"><h3 class="title-gradient">Vibe Coding</h3><p>A Vibe Coding apresentou uma ferramenta que promete acelerar entregas.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia2.png" alt="Noticia 2"><div class="card-content"><h3 class="title-gradient">Tendências de IA</h3><p>Novas previsões apontam que a IA deve transformar processos corporativos.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia3.png" alt="Noticia 3"><div class="card-content"><h3 class="title-gradient">Linguagem ≠ Inteligência</h3><p>Especialistas ressaltam que dominar linguagem não significa possuir capacidade cognitiva.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia4.png" alt="Noticia 4"><div class="card-content"><h3 class="title-gradient">TOTVS e IA</h3><p>A TOTVS ampliou sua atuação em IA com a aquisição da Suri.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia5.png" alt="Noticia 5"><div class="card-content"><h3 class="title-gradient">Fim do JS?</h3><p>Novo framework baseado em Rust promete ser 10x mais rápido que o React.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia6.png" alt="Noticia 6"><div class="card-content"><h3 class="title-gradient">Vazamento Global</h3><p>Falha em servidor de nuvem expõe dados de big techs.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia7.png" alt="Noticia 7"><div class="card-content"><h3 class="title-gradient">NVIDIA dispara</h3><p>Com a alta demanda por chips de IA, as ações da empresa disparam novamente.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia8.png" alt="Noticia 8"><div class="card-content"><h3 class="title-gradient">Web 4.0</h3><p>Conceito de internet descentralizada ganha força com novos protocolos.</p><a href="#" class="link-green">saiba mais</a></div></div>
+
+                <div class="news-card"><img src="assets/img/noticia1.png"><div class="card-content"><h3 class="title-gradient">Vibe Coding</h3><p>A Vibe Coding apresentou uma ferramenta que promete acelerar entregas.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia2.png"><div class="card-content"><h3 class="title-gradient">Tendências de IA</h3><p>Novas previsões apontam que a IA deve transformar processos corporativos.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia3.png"><div class="card-content"><h3 class="title-gradient">Linguagem ≠ Inteligência</h3><p>Especialistas ressaltam que dominar linguagem não significa possuir capacidade cognitiva.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia4.png"><div class="card-content"><h3 class="title-gradient">TOTVS e IA</h3><p>A TOTVS ampliou sua atuação em IA com a aquisição da Suri.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia5.png"><div class="card-content"><h3 class="title-gradient">Fim do JS?</h3><p>Novo framework baseado em Rust promete ser 10x mais rápido que o React.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia6.png"><div class="card-content"><h3 class="title-gradient">Vazamento Global</h3><p>Falha em servidor de nuvem expõe dados de big techs.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia7.png"><div class="card-content"><h3 class="title-gradient">NVIDIA dispara</h3><p>Com a alta demanda por chips de IA, as ações da empresa disparam novamente.</p><a href="#" class="link-green">saiba mais</a></div></div>
+                <div class="news-card"><img src="assets/img/noticia8.png"><div class="card-content"><h3 class="title-gradient">Web 4.0</h3><p>Conceito de internet descentralizada ganha força com novos protocolos.</p><a href="#" class="link-green">saiba mais</a></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2 style="margin-bottom: 30px; text-align: center;">tá com <span style="color: #bd00ff;">dúvida?</span></h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question"><span>O que eu vou receber?</span><span class="arrow">v</span></div>
+                <div class="faq-answer"><p>Um resumo direto e imparcial das principais notícias do mundo Tech.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><span>Por que é diferente?</span><span class="arrow">v</span></div>
+                <div class="faq-answer"><p>Se chegou até aqui, já temos sua atenção. Leia e descubra!</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><span>Vou receber spam?</span><span class="arrow">v</span></div>
+                <div class="faq-answer"><p>Não! Só enviamos conteúdos relevantes.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><span>Posso compartilhar?</span><span class="arrow">v</span></div>
+                <div class="faq-answer"><p>Claro! Vamos deixar todo mundo por dentro.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo" style="margin-bottom: 20px;">read.<span style="color: #bd00ff;">&lt;me&gt;</span></div>
+        <p>&copy; 2025 the lima co. Políticas de Privacidade e Termos de Uso.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

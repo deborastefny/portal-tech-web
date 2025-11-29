@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação | read.me</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="preload">
+
+    <script>
+        (function() {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'light-mode') document.body.classList.add('light-mode');
+        })();
+    </script>
+
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="assets/img/logo.png.png" alt="Read.me Logo" class="logo-img">
+        </a>
+        
+        <a href="cadastro.html" class="btn-pill-gradient mobile-only-btn">Assine</a>
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html">Read&lt;me&gt;</a>
+                <a href="cadastro.html">Insights</a>
+                <a href="interacao.html">Hub</a>
+            </div>
+
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox-theme">
+                    <input type="checkbox" id="checkbox-theme" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+
+            <a href="cadastro.html" class="btn-pill-gradient desktop-only-btn">Assine</a>
+        </div>
+    </nav>
+    <section class="hub-section">
+        
+        <div class="hub-header-text">
+            <h1 class="page-title text-pink">Hub</h1>
+            <h2 class="page-subtitle">O output da comunidade.<br><span style="color: #bd00ff;">Fale o que pensa.</span></h2>
+        </div>
+
+        <div class="hub-container-neon">
+            <div class="hub-inner-content">
+                
+                <div class="feed-scroll-area">
+                    
+                    <div class="post-thread">
+                        <div class="post-card">
+                            <div class="post-header">
+                                <span class="user-handle">@devdob_</span>
+                                <span class="post-time">2 dias atrás</span>
+                            </div>
+                            <p class="post-body">
+                                Alguém me explica por que centralizar uma div em 2025 ainda é tão difícil? Tentei justify-content: center e o botão foi parar na casa do vizinho. Socorro. 🤡
+                            </p>
+                            <div class="post-actions">
+                                <button class="btn-reply">responder</button>
+                            </div>
+                        </div>
+
+                        <div class="post-reply">
+                            <div class="reply-line"></div> 
+                            <div class="post-card reply-card">
+                                <div class="post-header">
+                                    <span class="user-handle" style="color: #666;">@devclara_</span>
+                                </div>
+                                <p class="post-body">
+                                    Esquece o flexbox, guerreira. Mete um display: grid e place-items: center.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-thread">
+                        <div class="post-card">
+                            <div class="post-header">
+                                <span class="user-handle">@works_on_my_machine</span>
+                                <span class="post-time">5 horas atrás</span>
+                            </div>
+                            <p class="post-body">
+                                Testei aqui e rodou liso. O problema deve ser a pecinha que fica entre a cadeira e o teclado.
+                            </p>
+                            <div class="post-actions">
+                                <button class="btn-reply">responder</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div class="hub-input-area">
+                    <div class="reply-status-bar" id="reply-status">
+                        <span>Respondendo a <strong id="reply-target-name">@alguem</strong></span>
+                        <button class="btn-cancel-reply-mode">✕</button>
+                    </div>
+
+                    <div class="input-row">
+                        <input type="text" id="hub-apelido" placeholder="Apelido (ex: dev_ninja)" class="hub-input">
+                        <input type="email" placeholder="Email" class="hub-input">
+                    </div>
+                    <textarea id="hub-msg" placeholder="Escrever comentário..." class="hub-textarea"></textarea>
+                    
+                    <div class="hub-actions">
+                        <button class="btn-git-commit">GIT COMMIT</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="logo" style="margin-bottom: 20px;">read.<span style="color: #bd00ff;">&lt;me&gt;</span></div>
+        <p>&copy; 2025 the lima co. Políticas de Privacidade e Termos de Uso.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
